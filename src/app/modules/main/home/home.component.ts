@@ -14,7 +14,7 @@ import { Section6Component } from './sections/section6/section6.component';
     Section3Component,
     Section4Component,
     Section5Component,
-    Section6Component
+    Section6Component,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -249,6 +249,33 @@ export class HomeComponent {
       iconSet:
         'https://secure.meetupstatic.com/next/images/complex-icons/branded/potion.webp?w=48 1x, https://secure.meetupstatic.com/next/images/complex-icons/branded/potion.webp?w=96 2x',
       icon: 'https://secure.meetupstatic.com/next/images/complex-icons/branded/potion.webp?w=96',
+    },
+  ];
+
+  public dataFriends: any[] = [
+    {
+      imgSet:
+        'https://secure.meetupstatic.com/next/images/home/first-article-2.webp?w=384 1x, https://secure.meetupstatic.com/next/images/home/first-article-2.webp?w=750 2x',
+      img: 'https://secure.meetupstatic.com/next/images/home/first-article-2.webp?w=750',
+      title: 'Usé Meetup para hacer amigos en un brunch',
+      description:
+        'La escritora de Nueva Jersey Brianna Stryker quería hacer amigos en su ciudad natal. Descubre cómo utilizó Meetup para conectar con gente al unirse a un grupo de Meetup llamado "Girls Night Out".',
+    },
+    {
+      imgSet:
+        'https://secure.meetupstatic.com/next/images/home/second-article-2.webp?w=384 1x, https://secure.meetupstatic.com/next/images/home/second-article-2.webp?w=750 2x',
+      img: 'https://secure.meetupstatic.com/next/images/home/second-article-2.webp?w=750',
+      title: 'Cómo convertir conexiones ocasionales en amistades cercanas',
+      description:
+        'Está demostrado que es más difícil tener nuevos amigos íntimos siendo adultos. Pero no te preocupes, aquí te explicamos lo que puedes hacer para simplificar el proceso.',
+    },
+    {
+      imgSet:
+        'https://secure.meetupstatic.com/next/images/home/third-article-2.webp?w=384 1x, https://secure.meetupstatic.com/next/images/home/third-article-2.webp?w=750 2x',
+      img: 'https://secure.meetupstatic.com/next/images/home/third-article-2.webp?w=750',
+      title: '¿Tienes el número "adecuado" de amigos?',
+      description:
+        'Estudios de todo el mundo han tratado de dar respuesta a esta pregunta. Descubre los tres niveles de amistad y cómo puedes llegar a ellos.',
     },
   ];
 }
