@@ -1,0 +1,28 @@
+<section class="flex flex-col gap-ds2-32">
+    <!-- Title and button -->
+    <div class="flex items-baseline justify-between">
+        <div class="flex gap-ds2-12 items-center">
+            <div class="flex flex-col gap-ds2-4">
+                <h2 class="ds2-b24 text-ds2-text-fill-primary-enabled">Asistentes</h2>
+            </div>
+            <div
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max text-ds2-badge-text-fill-neutral-enabled border border-ds2-badge-base-stroke-neutral-enabled px-ds2-10 py-ds2-6 gap-ds2-4 ds2-m13 !px-ds2-8 !py-ds2-2">
+                <span class="truncate px-ds2-2">{{data.length}} </span>
+            </div>
+        </div><button
+            class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6"
+            type="button" data-disabled="false"><span
+                class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span
+                    class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
+                    style="gap: inherit;"><span class="min-w-0 max-w-full truncate px-ds2-2">Ver
+                        todo</span></span></span></button>
+    </div>
+    <div class="flex flex-col gap-ds2-60">
+        <div class="grid min-h-[174px] grid-cols-3 gap-ds2-12 sm:grid-cols-4">
+            <div *ngFor="let item of data">
+                <app-card-person  [data]="item"></app-card-person>
+            </div>
+            
+        </div>
+    </div>
+</section>

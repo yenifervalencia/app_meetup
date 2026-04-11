@@ -1,0 +1,28 @@
+<div class="flex flex-1">
+    <a id="attendees-link-0" href="https://www.meetup.com/members/429574560" rel="nofollow"
+        class="group flex w-full flex-col items-center gap-ds2-16 rounded-ds2-28 bg-ds2-surface-fill-primary-enabled px-ds2-12 py-ds2-16 shadow-ds2-shadow-xs-border transition-transform duration-150 hover:-translate-y-[6px] hover:no-underline"
+        data-testid="attendee-card" data-event-label="event-attendee">
+        <div class="relative">
+            <div class="relative flex items-center justify-center rounded-ds2-max size-[72px]">
+                <div
+                    class="flex size-full select-none items-center justify-center overflow-hidden rounded-ds2-max outline-1 -outline-offset-1 outline-ds2-avatar-base-stroke-enabled [outline-style:solid]">
+                    <img alt="Foto del usuario Yadira R." draggable="false" aria-label="Foto del usuario Yadira R."
+                        loading="lazy" width="72" height="72" decoding="async" data-nimg="1"
+                        class="size-full object-cover" [srcset]="data.img" [src]="data.img" style="color: transparent;">
+                </div>
+            </div>
+            <div *ngIf="data.is_organiz"
+                class="absolute -bottom-ds2-10 left-1/2 z-10 -translate-x-1/2 rounded-ds2-max bg-ds2-surface-fill-primary-enabled px-ds2-2">
+                <div
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max bg-ds2-badge-base-fill-secondary-enabled text-ds2-badge-text-fill-secondary-enabled px-ds2-6 py-ds2-2 gap-ds2-2 ds2-m11 -translate-y-[1.5px]">
+                    <span class="truncate px-ds2-2">Organizador</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-full flex-col items-center gap-ds2-2 text-center">
+            <div class="ds2-m14 line-clamp-2 w-full overflow-hidden text-ellipsis text-ds2-text-fill-primary-enabled">
+                {{data.name}}</div>
+            <div class="ds2-r12 text-ds2-text-fill-tertiary-enabled">{{data.desc}} </div>
+        </div>
+    </a>
+</div>
