@@ -1,126 +1,100 @@
-<div
-    class="peer relative z-50 flex items-center justify-between rounded-b-[1.5rem] rounded-t-none px-[2.5rem] pb-[1rem] pt-[1.25rem] has-[input:focus]:bg-surface-fill-primary-enabled">
-    <div class="group flex w-full items-center gap-[2rem] self-stretch">
-        <!-- Logo and button -->
-        <div class="flex flex-1 items-center gap-[3rem]">
+<header id="app-header" class="top-0 z-50 mb-ds2-40 xs:mb-0" data-event-label="Header"
+    style="background-color: var(--background-color);">
+    <!-- Desktop -->
+    <div
+        class="hidden lg:block peer relative z-50 flex items-center justify-between rounded-b-[1.5rem] rounded-t-none px-[2.5rem] pb-[1rem] pt-[1.25rem] has-[input:focus]:bg-surface-fill-primary-enabled">
+        <div class="group flex w-full items-center gap-[2rem] self-stretch">
+            <!-- Logo and button -->
+            <div class="flex flex-1 items-center gap-[3rem]">
 
-            <div class="relative shrink-0">
-                <!-- logo -->
-                <div class="peer transition-opacity duration-300 hover:opacity-0">
-                    <a class="hover:no-underline" href="/home">
-                        <div class="btn-home">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="125" height="34" viewBox="0 0 681 185"
-                                    fill="none" class="injected-svg w-full h-full"
-                                    data-src="https://secure.meetupstatic.com/next/images/complex-icons/meetup-logo-horizontal.svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <title>meetupLogoHorizontal icon</title>
-                                    <path
-                                        d="M37 25.0092C63.4723 14.099 112.028 1.56643 146.287 11.306C163.906 16.3148 179.899 35.273 182.965 55.4691C185.505 72.2047 179.014 91.3382 170.043 101.02C169.385 101.73 169.035 102.672 169.101 103.638C169.124 103.979 169.203 104.326 169.326 104.644C181.719 136.509 162.275 151.899 140.12 156.222C117.433 160.649 95.2794 168.245 73.9717 177.12H73.9697L73.9688 177.121C52.1305 186.234 20.8442 176.833 10.2783 153.424C4.30451 140.189 8.52537 120.936 13.3428 107.305C13.9285 105.648 13.5934 103.808 12.5244 102.413C8.55753 97.2362 5.44083 91.0815 3.50098 84.142C-4.12034 56.8745 12.8208 34.9743 37 25.0092ZM114.908 61.1654C108.635 54.23 97.5422 53.1172 89.1426 60.889C87.5139 62.396 84.529 62.0475 82.9668 60.4711C77.9484 55.406 68.7616 54.3419 61.0439 57.4388C54.6646 59.9987 49.541 65.8629 46.4541 74.8617C46.4541 74.8617 40.8604 96.4003 36.0732 109.507C28.4968 131.95 61.6053 138.415 68.1221 117.38L77.5176 84.4242C79.001 79.6444 81.2458 75.5336 85.7549 76.6791C90.2641 77.8247 90.5048 82.4569 88.7295 87.4388L84.333 105.623C80.3124 120.146 100.736 124.067 105.059 110.756L112.11 84.4242C113.514 79.3615 116.038 76.393 119.691 77.1556C123.345 77.9191 124.455 81.0511 123.011 86.1049L119.125 101.447C116.571 110.27 118.876 117.604 127.767 119.03C137.461 120.584 143.551 116.511 145.627 114.789C146.172 114.339 146.489 113.692 146.606 112.994C146.839 111.616 145.772 110.378 144.379 110.339C140.707 110.239 138.456 109.677 137.643 107.31C137.021 105.501 136.802 103.545 137.924 99.6078C138.898 96.1892 141.373 87.2989 143.187 80.7699C145.212 73.4811 148.028 65.1583 141.291 59.3959C135.635 54.5581 126.831 55.947 119.946 61.6263C118.479 62.8369 116.185 62.577 114.908 61.1654Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M126.123 182.709C153.626 181.998 161.081 165.17 154.675 163.914C137.203 160.488 64.0647 184.315 126.123 182.709Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M31.5185 5.48149C12.5894 6.95477 6.73902 25.6945 11.3055 25.6945C23.4298 25.6945 72.9003 2.26069 31.5185 5.48149Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M628.572 153.039H607.771V59.4394H628.572V70.2294C633.122 62.2994 641.312 57.3594 650.672 57.3594C669.132 57.3594 680.572 72.9594 680.572 92.7194C680.572 112.479 669.132 128.079 650.672 128.079C641.182 128.079 633.122 123.269 628.572 115.209V153.039ZM628.572 92.7194C628.572 102.209 634.552 110.399 644.172 110.399C654.442 110.399 659.771 102.209 659.771 92.7194C659.771 83.2294 654.442 75.0394 644.172 75.0394C634.552 75.0394 628.572 83.2294 628.572 92.7194Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M576.785 59.4395H597.585V125.999H576.785V117.419C572.235 124.569 565.475 128.079 556.765 128.079C544.025 128.079 533.105 119.369 533.105 99.8695V59.4395H553.905V96.8795C553.905 105.589 558.455 110.399 565.085 110.399C572.235 110.399 576.785 105.719 576.785 95.0595V59.4395Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M490.674 76.0797H478.194V59.4397H486.514C490.544 59.4397 492.754 57.2297 492.754 53.1997V40.7197H511.474V59.4397H526.034V76.0797H511.474V100.13C511.474 108.32 518.754 111.44 526.034 108.32V126C524.214 126.52 521.354 127.04 517.844 127.04C501.724 127.04 490.674 121.58 490.674 98.1797V76.0797Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M406.846 92.7194C406.846 72.0494 420.106 57.3594 443.116 57.3594C460.536 57.3594 477.566 67.6294 477.566 90.5094C477.566 92.5894 477.436 95.9694 477.176 97.9194H427.516C428.946 106.109 434.666 111.439 443.636 111.439C450.006 111.439 453.906 107.669 455.856 103.379L476.136 107.799C472.106 117.809 462.356 128.079 443.506 128.079C419.586 128.079 406.846 112.479 406.846 92.7194ZM427.906 85.4394H457.156C456.246 77.6394 451.046 73.4794 443.506 73.4794C433.626 73.4794 429.466 78.5494 427.906 85.4394Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M332.735 92.7194C332.735 72.0494 345.995 57.3594 369.005 57.3594C386.425 57.3594 403.455 67.6294 403.455 90.5094C403.455 92.5894 403.325 95.9694 403.065 97.9194H353.405C354.835 106.109 360.555 111.439 369.525 111.439C375.895 111.439 379.795 107.669 381.745 103.379L402.025 107.799C397.995 117.809 388.245 128.079 369.395 128.079C345.475 128.079 332.735 112.479 332.735 92.7194ZM353.795 85.4394H383.045C382.135 77.6394 376.935 73.4794 369.395 73.4794C359.515 73.4794 355.355 78.5494 353.795 85.4394Z"
-                                        fill="currentColor"></path>
-                                    <path
-                                        d="M248.8 125.999H228V59.4394H248.8V68.0194C252.83 60.8694 259.07 57.3594 266.87 57.3594C274.67 57.3594 281.95 60.6094 285.72 69.1894C290.79 60.3494 298.33 57.3594 305.87 57.3594C317.05 57.3594 327.84 63.9894 327.84 83.4894V125.999H307.04V85.5694C307.04 78.6794 303.4 75.0394 297.94 75.0394C291.96 75.0394 288.32 78.5494 288.32 87.3894V125.999H267.52V85.5694C267.52 78.6794 263.88 75.0394 258.42 75.0394C252.44 75.0394 248.8 78.5494 248.8 87.3894V125.999Z"
-                                        fill="currentColor"></path>
-                                </svg>
+                <div class="relative shrink-0">
+                    <!-- logo -->
+                    <div class="peer transition-opacity duration-300 hover:opacity-0">
+                        <a class="hover:no-underline" href="/home">
+                            <div class="btn-home">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="125" height="34"
+                                        viewBox="0 0 681 185" fill="none" class="injected-svg w-full h-full"
+                                        data-src="https://secure.meetupstatic.com/next/images/complex-icons/meetup-logo-horizontal.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>meetupLogoHorizontal icon</title>
+                                        <path
+                                            d="M37 25.0092C63.4723 14.099 112.028 1.56643 146.287 11.306C163.906 16.3148 179.899 35.273 182.965 55.4691C185.505 72.2047 179.014 91.3382 170.043 101.02C169.385 101.73 169.035 102.672 169.101 103.638C169.124 103.979 169.203 104.326 169.326 104.644C181.719 136.509 162.275 151.899 140.12 156.222C117.433 160.649 95.2794 168.245 73.9717 177.12H73.9697L73.9688 177.121C52.1305 186.234 20.8442 176.833 10.2783 153.424C4.30451 140.189 8.52537 120.936 13.3428 107.305C13.9285 105.648 13.5934 103.808 12.5244 102.413C8.55753 97.2362 5.44083 91.0815 3.50098 84.142C-4.12034 56.8745 12.8208 34.9743 37 25.0092ZM114.908 61.1654C108.635 54.23 97.5422 53.1172 89.1426 60.889C87.5139 62.396 84.529 62.0475 82.9668 60.4711C77.9484 55.406 68.7616 54.3419 61.0439 57.4388C54.6646 59.9987 49.541 65.8629 46.4541 74.8617C46.4541 74.8617 40.8604 96.4003 36.0732 109.507C28.4968 131.95 61.6053 138.415 68.1221 117.38L77.5176 84.4242C79.001 79.6444 81.2458 75.5336 85.7549 76.6791C90.2641 77.8247 90.5048 82.4569 88.7295 87.4388L84.333 105.623C80.3124 120.146 100.736 124.067 105.059 110.756L112.11 84.4242C113.514 79.3615 116.038 76.393 119.691 77.1556C123.345 77.9191 124.455 81.0511 123.011 86.1049L119.125 101.447C116.571 110.27 118.876 117.604 127.767 119.03C137.461 120.584 143.551 116.511 145.627 114.789C146.172 114.339 146.489 113.692 146.606 112.994C146.839 111.616 145.772 110.378 144.379 110.339C140.707 110.239 138.456 109.677 137.643 107.31C137.021 105.501 136.802 103.545 137.924 99.6078C138.898 96.1892 141.373 87.2989 143.187 80.7699C145.212 73.4811 148.028 65.1583 141.291 59.3959C135.635 54.5581 126.831 55.947 119.946 61.6263C118.479 62.8369 116.185 62.577 114.908 61.1654Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M126.123 182.709C153.626 181.998 161.081 165.17 154.675 163.914C137.203 160.488 64.0647 184.315 126.123 182.709Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M31.5185 5.48149C12.5894 6.95477 6.73902 25.6945 11.3055 25.6945C23.4298 25.6945 72.9003 2.26069 31.5185 5.48149Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M628.572 153.039H607.771V59.4394H628.572V70.2294C633.122 62.2994 641.312 57.3594 650.672 57.3594C669.132 57.3594 680.572 72.9594 680.572 92.7194C680.572 112.479 669.132 128.079 650.672 128.079C641.182 128.079 633.122 123.269 628.572 115.209V153.039ZM628.572 92.7194C628.572 102.209 634.552 110.399 644.172 110.399C654.442 110.399 659.771 102.209 659.771 92.7194C659.771 83.2294 654.442 75.0394 644.172 75.0394C634.552 75.0394 628.572 83.2294 628.572 92.7194Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M576.785 59.4395H597.585V125.999H576.785V117.419C572.235 124.569 565.475 128.079 556.765 128.079C544.025 128.079 533.105 119.369 533.105 99.8695V59.4395H553.905V96.8795C553.905 105.589 558.455 110.399 565.085 110.399C572.235 110.399 576.785 105.719 576.785 95.0595V59.4395Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M490.674 76.0797H478.194V59.4397H486.514C490.544 59.4397 492.754 57.2297 492.754 53.1997V40.7197H511.474V59.4397H526.034V76.0797H511.474V100.13C511.474 108.32 518.754 111.44 526.034 108.32V126C524.214 126.52 521.354 127.04 517.844 127.04C501.724 127.04 490.674 121.58 490.674 98.1797V76.0797Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M406.846 92.7194C406.846 72.0494 420.106 57.3594 443.116 57.3594C460.536 57.3594 477.566 67.6294 477.566 90.5094C477.566 92.5894 477.436 95.9694 477.176 97.9194H427.516C428.946 106.109 434.666 111.439 443.636 111.439C450.006 111.439 453.906 107.669 455.856 103.379L476.136 107.799C472.106 117.809 462.356 128.079 443.506 128.079C419.586 128.079 406.846 112.479 406.846 92.7194ZM427.906 85.4394H457.156C456.246 77.6394 451.046 73.4794 443.506 73.4794C433.626 73.4794 429.466 78.5494 427.906 85.4394Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M332.735 92.7194C332.735 72.0494 345.995 57.3594 369.005 57.3594C386.425 57.3594 403.455 67.6294 403.455 90.5094C403.455 92.5894 403.325 95.9694 403.065 97.9194H353.405C354.835 106.109 360.555 111.439 369.525 111.439C375.895 111.439 379.795 107.669 381.745 103.379L402.025 107.799C397.995 117.809 388.245 128.079 369.395 128.079C345.475 128.079 332.735 112.479 332.735 92.7194ZM353.795 85.4394H383.045C382.135 77.6394 376.935 73.4794 369.395 73.4794C359.515 73.4794 355.355 78.5494 353.795 85.4394Z"
+                                            fill="currentColor"></path>
+                                        <path
+                                            d="M248.8 125.999H228V59.4394H248.8V68.0194C252.83 60.8694 259.07 57.3594 266.87 57.3594C274.67 57.3594 281.95 60.6094 285.72 69.1894C290.79 60.3494 298.33 57.3594 305.87 57.3594C317.05 57.3594 327.84 63.9894 327.84 83.4894V125.999H307.04V85.5694C307.04 78.6794 303.4 75.0394 297.94 75.0394C291.96 75.0394 288.32 78.5494 288.32 87.3894V125.999H267.52V85.5694C267.52 78.6794 263.88 75.0394 258.42 75.0394C252.44 75.0394 248.8 78.5494 248.8 87.3894V125.999Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- button home -->
-                <div
-                    class="pointer-events-none absolute inset-0 z-0 flex items-center justify-center opacity-0 transition-opacity duration-[.30s] peer-hover:opacity-100">
-                    <button
-                        class="inline-flex items-center justify-center rounded-full max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-[.15s] before:absolute before:rounded-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-[.15s] data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-[#69696c] hover:text-text_button-content-fill-secondary-hover gap-[.375rem] ds2-m16 before:-inset-x-12 before:-inset-y-6 pointer-events-none">
-                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
-                            style="gap: inherit;">
-                            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
+                        </a>
+                    </div>
+                    <!-- button home -->
+                    <div
+                        class="pointer-events-none absolute inset-0 z-0 flex items-center justify-center opacity-0 transition-opacity duration-[.30s] peer-hover:opacity-100">
+                        <button
+                            class="inline-flex items-center justify-center rounded-full max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-[.15s] before:absolute before:rounded-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-[.15s] data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-[#69696c] hover:text-text_button-content-fill-secondary-hover gap-[.375rem] ds2-m16 before:-inset-x-12 before:-inset-y-6 pointer-events-none">
+                            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
                                 style="gap: inherit;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2.146625258399798"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-house flex-shrink-0" aria-hidden="true">
-                                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                                    <path
-                                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
-                                    </path>
-                                </svg>
-                                <span class="min-w-0 max-w-full truncate px-2">Página de inicio</span>
+                                <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
+                                    style="gap: inherit;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.146625258399798"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-house flex-shrink-0" aria-hidden="true">
+                                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                                        <path
+                                            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                                        </path>
+                                    </svg>
+                                    <span class="min-w-0 max-w-full truncate px-2">Página de inicio</span>
+                                </span>
                             </span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            <!-- Search -->
-            <form
-                class="flex-1 outline-none w-full max-w-[500px] transition-all duration-[.15s] has-[input:focus]:max-w-[600px]">
-                <div
-                    class="flex gap-[.125rem] rounded-full bg-ds2-main_search_input-base-fill-primary-enabled p-ds2-4 shadow-ds2-shadow-main-search-input-base-primary-enabled has-[:focus]:bg-ds2-main_search_input-base-fill-primary-active has-[:focus]:shadow-none">
-                    <div class="group/locationInputContainer relative flex flex-1 rounded-full py-ds2-8 pl-ds2-16 hover:bg-ds2-main_search_input-base-fill-secondary-hover has-[:focus]:bg-ds2-main_search_input-base-fill-secondary-active has-[:focus]:shadow-ds2-shadow-main-search-input-base-secondary-active"
-                        data-event-category="Top Nav - Search">
-                        <input id="keyword-bar-in-search" name="keywords" placeholder="Buscar eventos..."
-                            aria-label="Buscar eventos..." autocomplete="on"
-                            class="placeholder:text-ds2-input-text-field-fill-enabled ds2-r14 w-0 flex-1 appearance-none truncate border-r border-ds2-surface-stroke-secondary-enabled bg-transparent outline-none placeholder:ds2-r14 hover:border-transparent focus:border-transparent"
-                            data-element-name="keyword-bar-in-search" data-event-label="Keyword search variant2"
-                            value="" />
-                        <input id="hidden-location-search-submit" data-testid="hidden-location-search-submit"
-                            type="submit" class="sr-only absolute -left-[384px] sm:hidden" value="Submit" />
-                        <button data-state="closed" tabindex="-1" class="" style="line-height: 0;">
-                            <button
-                                class="items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 hover:after:bg-ds2-icon_button-base-fill-tertiary-hover absolute top-1/2 -translate-y-1/2 right-[10px] opacity-0 group-has-[input:focus]/locationInputContainer:opacity-100 hidden"
-                                type="button" data-disabled="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="1.6099689437998486"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-x text-ds2-icon_button-icon-fill-tertiary-enabled hover:text-ds2-icon_button-icon-fill-tertiary-hover"
-                                    aria-hidden="true">
-                                    <path d="M18 6 6 18"></path>
-                                    <path d="m6 6 12 12"></path>
-                                </svg>
-                            </button>
                         </button>
                     </div>
+                </div>
+                <!-- Search -->
+                <form
+                    class="flex-1 outline-none w-full max-w-[500px] transition-all duration-[.15s] has-[input:focus]:max-w-[600px]">
                     <div
-                        class="relative flex flex-1 rounded-full py-ds2-8 pl-ds2-16 hover:bg-ds2-main_search_input-base-fill-secondary-hover has-[:focus]:bg-ds2-main_search_input-base-fill-secondary-active has-[:focus]:shadow-ds2-shadow-main-search-input-base-secondary-active">
-                        <div class="group/eventsInputContainer relative flex w-full" data-testid="SearchTypeahead"
-                            role="combobox" aria-haspopup="listbox" aria-owns="location-typeahead-header-search-menu"
-                            aria-expanded="false">
-                            <input tabindex="0" placeholder="Barrio, ciudad o código postal"
-                                aria-label="Buscar ubicación por ciudad o código postal"
-                                data-element-name="header-search" data-event-label="Location search variant2"
-                                aria-expanded="false" aria-autocomplete="list"
-                                aria-controls="location-typeahead-header-search-menu" data-event-category="header"
-                                role="combobox"
-                                class="placeholder:text-ds2-input-text-field-fill-enabled ds2-r14 w-0 flex-1 appearance-none bg-transparent outline-none placeholder:ds2-r14 truncate"
-                                id="location-typeahead-header-search"
-                                aria-labelledby="location-typeahead-header-search-label" autocomplete="off"
-                                value="Cali, CO" />
+                        class="flex gap-[.125rem] rounded-full bg-ds2-main_search_input-base-fill-primary-enabled p-ds2-4 shadow-ds2-shadow-main-search-input-base-primary-enabled has-[:focus]:bg-ds2-main_search_input-base-fill-primary-active has-[:focus]:shadow-none">
+                        <div class="group/locationInputContainer relative flex flex-1 rounded-full py-ds2-8 pl-ds2-16 hover:bg-ds2-main_search_input-base-fill-secondary-hover has-[:focus]:bg-ds2-main_search_input-base-fill-secondary-active has-[:focus]:shadow-ds2-shadow-main-search-input-base-secondary-active"
+                            data-event-category="Top Nav - Search">
+                            <input id="keyword-bar-in-search" name="keywords" placeholder="Buscar eventos..."
+                                aria-label="Buscar eventos..." autocomplete="on"
+                                class="placeholder:text-ds2-input-text-field-fill-enabled ds2-r14 w-0 flex-1 appearance-none truncate border-r border-ds2-surface-stroke-secondary-enabled bg-transparent outline-none placeholder:ds2-r14 hover:border-transparent focus:border-transparent"
+                                data-element-name="keyword-bar-in-search" data-event-label="Keyword search variant2"
+                                value="" />
+                            <input id="hidden-location-search-submit" data-testid="hidden-location-search-submit"
+                                type="submit" class="sr-only absolute -left-[384px] sm:hidden" value="Submit" />
                             <button data-state="closed" tabindex="-1" class="" style="line-height: 0;">
                                 <button
-                                    class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 hover:after:bg-ds2-icon_button-base-fill-tertiary-hover ml-ds2-4 mr-ds2-10 opacity-0 group-has-[input:focus]/eventsInputContainer:opacity-100"
-                                    type="button" data-disabled="false"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="1.6099689437998486" stroke-linecap="round" stroke-linejoin="round"
+                                    class="items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 hover:after:bg-ds2-icon_button-base-fill-tertiary-hover absolute top-1/2 -translate-y-1/2 right-[10px] opacity-0 group-has-[input:focus]/locationInputContainer:opacity-100 hidden"
+                                    type="button" data-disabled="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.6099689437998486"
+                                        stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-x text-ds2-icon_button-icon-fill-tertiary-enabled hover:text-ds2-icon_button-icon-fill-tertiary-hover"
                                         aria-hidden="true">
                                         <path d="M18 6 6 18"></path>
@@ -129,36 +103,174 @@
                                 </button>
                             </button>
                         </div>
+                        <div
+                            class="relative flex flex-1 rounded-full py-ds2-8 pl-ds2-16 hover:bg-ds2-main_search_input-base-fill-secondary-hover has-[:focus]:bg-ds2-main_search_input-base-fill-secondary-active has-[:focus]:shadow-ds2-shadow-main-search-input-base-secondary-active">
+                            <div class="group/eventsInputContainer relative flex w-full" data-testid="SearchTypeahead"
+                                role="combobox" aria-haspopup="listbox"
+                                aria-owns="location-typeahead-header-search-menu" aria-expanded="false">
+                                <input tabindex="0" placeholder="Barrio, ciudad o código postal"
+                                    aria-label="Buscar ubicación por ciudad o código postal"
+                                    data-element-name="header-search" data-event-label="Location search variant2"
+                                    aria-expanded="false" aria-autocomplete="list"
+                                    aria-controls="location-typeahead-header-search-menu" data-event-category="header"
+                                    role="combobox"
+                                    class="placeholder:text-ds2-input-text-field-fill-enabled ds2-r14 w-0 flex-1 appearance-none bg-transparent outline-none placeholder:ds2-r14 truncate"
+                                    id="location-typeahead-header-search"
+                                    aria-labelledby="location-typeahead-header-search-label" autocomplete="off"
+                                    value="Cali, CO" />
+                                <button data-state="closed" tabindex="-1" class="" style="line-height: 0;">
+                                    <button
+                                        class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 hover:after:bg-ds2-icon_button-base-fill-tertiary-hover ml-ds2-4 mr-ds2-10 opacity-0 group-has-[input:focus]/eventsInputContainer:opacity-100"
+                                        type="button" data-disabled="false"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.6099689437998486" stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-x text-ds2-icon_button-icon-fill-tertiary-enabled hover:text-ds2-icon_button-icon-fill-tertiary-hover"
+                                            aria-hidden="true">
+                                            <path d="M18 6 6 18"></path>
+                                            <path d="m6 6 12 12"></path>
+                                        </svg>
+                                    </button>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center self-stretch pl-[14px]">
+                            <button
+                                class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 p-ds2-10"
+                                id="location-search-submit" data-testid="location-search-submit"
+                                aria-label="Buscar eventos..." data-element-name="header-searchBarButton"
+                                data-event-label="Search submit variant2" type="submit" data-disabled="false">
+                                <span
+                                    class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                    style="gap: inherit;">
+                                    <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                        style="gap: inherit;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.146625258399798" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-search shrink-0"
+                                            aria-hidden="true">
+                                            <path d="m21 21-4.34-4.34"></path>
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex items-center self-stretch pl-[14px]">
+                </form>
+            </div>
+            <!-- Buttons register, language, login -->
+            <div class="flex items-center gap-ds2-40">
+                <div class="flex items-center gap-ds2-20">
+                    <!-- Button language -->
+                    <div data-event-category="Top Nav - Language" class="flex items-center">
                         <button
-                            class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 p-ds2-10"
-                            id="location-search-submit" data-testid="location-search-submit"
-                            aria-label="Buscar eventos..." data-element-name="header-searchBarButton"
-                            data-event-label="Search submit variant2" type="submit" data-disabled="false">
+                            class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
+                            data-testid="language-selector" data-event-label="Language selection" type="button"
+                            data-disabled="false">
+                            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
+                                style="gap: inherit;">
+                                <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
+                                    style="gap: inherit;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.007984063681781"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-globe flex-shrink-0" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                        <path d="M2 12h20"></path>
+                                    </svg>
+                                    <span class="min-w-0 max-w-full truncate px-ds2-2">Español
+                                        (España)
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Button login, register -->
+                    <div class="flex items-center gap-ds2-20">
+                        <button
+                            class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
+                            data-testid="login-link" data-event-label="Login click variant2"
+                            data-element-name="header-loginLink" type="button" data-disabled="false">
+                            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
+                                style="gap: inherit;">
+                                <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
+                                    style="gap: inherit;">
+                                    <span class="min-w-0 max-w-full truncate px-ds2-2">Iniciar
+                                        sesión</span>
+                                </span>
+                            </span>
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 px-ds2-16 py-ds2-8"
+                            data-testid="register-link" data-event-label="Sign up variant2"
+                            data-element-name="header-registerLink" type="button" data-disabled="false">
                             <span
                                 class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
                                 style="gap: inherit;">
                                 <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
                                     style="gap: inherit;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2.146625258399798"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-search shrink-0" aria-hidden="true">
-                                        <path d="m21 21-4.34-4.34"></path>
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                    </svg>
+                                    <span
+                                        class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
+                                        <span class="block min-w-0 max-w-full truncate">Registrarse
+                                        </span>
+                                    </span>
                                 </span>
                             </span>
                         </button>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-        <!-- Buttons register, language, login -->
-        <div class="flex items-center gap-ds2-40">
+    </div>
+    <!-- Movil -->
+    <div class="lg:hidden flex flex-col items-center gap-ds2-20 self-stretch p-ds2-20">
+        <div class="flex items-center justify-between self-stretch"><a class="hover:no-underline"
+                href="https://www.meetup.com/es-ES/">
+                <div style="color: rgb(255, 74, 121); width: 125px; height: 34px;">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="34" viewBox="0 0 681 185"
+                            fill="none" class="injected-svg w-full h-full"
+                            data-src="https://secure.meetupstatic.com/next/images/complex-icons/meetup-logo-horizontal.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>meetupLogoHorizontal icon</title>
+                            <path
+                                d="M37 25.0092C63.4723 14.099 112.028 1.56643 146.287 11.306C163.906 16.3148 179.899 35.273 182.965 55.4691C185.505 72.2047 179.014 91.3382 170.043 101.02C169.385 101.73 169.035 102.672 169.101 103.638C169.124 103.979 169.203 104.326 169.326 104.644C181.719 136.509 162.275 151.899 140.12 156.222C117.433 160.649 95.2794 168.245 73.9717 177.12H73.9697L73.9688 177.121C52.1305 186.234 20.8442 176.833 10.2783 153.424C4.30451 140.189 8.52537 120.936 13.3428 107.305C13.9285 105.648 13.5934 103.808 12.5244 102.413C8.55753 97.2362 5.44083 91.0815 3.50098 84.142C-4.12034 56.8745 12.8208 34.9743 37 25.0092ZM114.908 61.1654C108.635 54.23 97.5422 53.1172 89.1426 60.889C87.5139 62.396 84.529 62.0475 82.9668 60.4711C77.9484 55.406 68.7616 54.3419 61.0439 57.4388C54.6646 59.9987 49.541 65.8629 46.4541 74.8617C46.4541 74.8617 40.8604 96.4003 36.0732 109.507C28.4968 131.95 61.6053 138.415 68.1221 117.38L77.5176 84.4242C79.001 79.6444 81.2458 75.5336 85.7549 76.6791C90.2641 77.8247 90.5048 82.4569 88.7295 87.4388L84.333 105.623C80.3124 120.146 100.736 124.067 105.059 110.756L112.11 84.4242C113.514 79.3615 116.038 76.393 119.691 77.1556C123.345 77.9191 124.455 81.0511 123.011 86.1049L119.125 101.447C116.571 110.27 118.876 117.604 127.767 119.03C137.461 120.584 143.551 116.511 145.627 114.789C146.172 114.339 146.489 113.692 146.606 112.994C146.839 111.616 145.772 110.378 144.379 110.339C140.707 110.239 138.456 109.677 137.643 107.31C137.021 105.501 136.802 103.545 137.924 99.6078C138.898 96.1892 141.373 87.2989 143.187 80.7699C145.212 73.4811 148.028 65.1583 141.291 59.3959C135.635 54.5581 126.831 55.947 119.946 61.6263C118.479 62.8369 116.185 62.577 114.908 61.1654Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M126.123 182.709C153.626 181.998 161.081 165.17 154.675 163.914C137.203 160.488 64.0647 184.315 126.123 182.709Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M31.5185 5.48149C12.5894 6.95477 6.73902 25.6945 11.3055 25.6945C23.4298 25.6945 72.9003 2.26069 31.5185 5.48149Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M628.572 153.039H607.771V59.4394H628.572V70.2294C633.122 62.2994 641.312 57.3594 650.672 57.3594C669.132 57.3594 680.572 72.9594 680.572 92.7194C680.572 112.479 669.132 128.079 650.672 128.079C641.182 128.079 633.122 123.269 628.572 115.209V153.039ZM628.572 92.7194C628.572 102.209 634.552 110.399 644.172 110.399C654.442 110.399 659.771 102.209 659.771 92.7194C659.771 83.2294 654.442 75.0394 644.172 75.0394C634.552 75.0394 628.572 83.2294 628.572 92.7194Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M576.785 59.4395H597.585V125.999H576.785V117.419C572.235 124.569 565.475 128.079 556.765 128.079C544.025 128.079 533.105 119.369 533.105 99.8695V59.4395H553.905V96.8795C553.905 105.589 558.455 110.399 565.085 110.399C572.235 110.399 576.785 105.719 576.785 95.0595V59.4395Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M490.674 76.0797H478.194V59.4397H486.514C490.544 59.4397 492.754 57.2297 492.754 53.1997V40.7197H511.474V59.4397H526.034V76.0797H511.474V100.13C511.474 108.32 518.754 111.44 526.034 108.32V126C524.214 126.52 521.354 127.04 517.844 127.04C501.724 127.04 490.674 121.58 490.674 98.1797V76.0797Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M406.846 92.7194C406.846 72.0494 420.106 57.3594 443.116 57.3594C460.536 57.3594 477.566 67.6294 477.566 90.5094C477.566 92.5894 477.436 95.9694 477.176 97.9194H427.516C428.946 106.109 434.666 111.439 443.636 111.439C450.006 111.439 453.906 107.669 455.856 103.379L476.136 107.799C472.106 117.809 462.356 128.079 443.506 128.079C419.586 128.079 406.846 112.479 406.846 92.7194ZM427.906 85.4394H457.156C456.246 77.6394 451.046 73.4794 443.506 73.4794C433.626 73.4794 429.466 78.5494 427.906 85.4394Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M332.735 92.7194C332.735 72.0494 345.995 57.3594 369.005 57.3594C386.425 57.3594 403.455 67.6294 403.455 90.5094C403.455 92.5894 403.325 95.9694 403.065 97.9194H353.405C354.835 106.109 360.555 111.439 369.525 111.439C375.895 111.439 379.795 107.669 381.745 103.379L402.025 107.799C397.995 117.809 388.245 128.079 369.395 128.079C345.475 128.079 332.735 112.479 332.735 92.7194ZM353.795 85.4394H383.045C382.135 77.6394 376.935 73.4794 369.395 73.4794C359.515 73.4794 355.355 78.5494 353.795 85.4394Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M248.8 125.999H228V59.4394H248.8V68.0194C252.83 60.8694 259.07 57.3594 266.87 57.3594C274.67 57.3594 281.95 60.6094 285.72 69.1894C290.79 60.3494 298.33 57.3594 305.87 57.3594C317.05 57.3594 327.84 63.9894 327.84 83.4894V125.999H307.04V85.5694C307.04 78.6794 303.4 75.0394 297.94 75.0394C291.96 75.0394 288.32 78.5494 288.32 87.3894V125.999H267.52V85.5694C267.52 78.6794 263.88 75.0394 258.42 75.0394C252.44 75.0394 248.8 78.5494 248.8 87.3894V125.999Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <div class="flex items-center justify-end gap-ds2-28">
+
+            </div>
             <div class="flex items-center gap-ds2-20">
-                <!-- Button language -->
                 <div data-event-category="Top Nav - Language" class="flex items-center">
                     <button
                         class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
@@ -176,46 +288,67 @@
                                     <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                     <path d="M2 12h20"></path>
                                 </svg>
-                                <span class="min-w-0 max-w-full truncate px-ds2-2">Español
-                                    (España)
-                                </span>
                             </span>
                         </span>
                     </button>
                 </div>
-                <!-- Button login, register -->
-                <div class="flex items-center gap-ds2-20">
-                    <button
-                        class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
-                        data-testid="login-link" data-event-label="Login click variant2"
-                        data-element-name="header-loginLink" type="button" data-disabled="false">
-                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
+                <button
+                    class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
+                    data-testid="login-link" data-event-label="Login click variant2"
+                    data-element-name="header-loginLink" type="button" data-disabled="false">
+                    <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
+                        style="gap: inherit;">
+                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
                             style="gap: inherit;">
-                            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
-                                style="gap: inherit;">
-                                <span class="min-w-0 max-w-full truncate px-ds2-2">Iniciar
-                                    sesión</span>
+                            <span class="min-w-0 max-w-full truncate px-ds2-2">Iniciar
+                                sesión</span>
+                        </span>
+                    </span>
+                </button>
+                <button
+                    class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 px-ds2-16 py-ds2-8"
+                    data-testid="register-link" data-event-label="Sign up variant2"
+                    data-element-name="header-registerLink" type="button" data-disabled="false">
+                    <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                        style="gap: inherit;">
+                        <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                            style="gap: inherit;">
+                            <span class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
+                                <span class="block min-w-0 max-w-full truncate">Registrarse</span>
                             </span>
                         </span>
-                    </button>
-                    <button
-                        class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 px-ds2-16 py-ds2-8"
-                        data-testid="register-link" data-event-label="Sign up variant2"
-                        data-element-name="header-registerLink" type="button" data-disabled="false">
-                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
-                            style="gap: inherit;">
-                            <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
-                                style="gap: inherit;">
-                                <span
-                                    class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
-                                    <span class="block min-w-0 max-w-full truncate">Registrarse
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </button>
-                </div>
+                    </span>
+                </button>
             </div>
         </div>
+        <div
+            class="flex w-full flex-1 items-center gap-ds2-4 rounded-full bg-ds2-surface-fill-primary-enabled p-ds2-4 pl-ds2-16 shadow-ds2-shadow-main-search-input-base-primary-enabled">
+            <div
+                class="flex flex-1 items-center justify-center gap-ds2-10 py-ds2-8 text-ds2-input-text_field-fill-enabled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.967739820199815" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-search" aria-hidden="true">
+                    <path d="m21 21-4.34-4.34"></path>
+                    <circle cx="11" cy="11" r="8"></circle>
+                </svg>
+                <div class="flex"><span class="ds2-r14">Buscar eventos...</span></div>
+            </div>
+            <button
+                class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 p-ds2-10"
+                type="button" data-disabled="false">
+                <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                    style="gap: inherit;">
+                    <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                        style="gap: inherit;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.146625258399798" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-search shrink-0" aria-hidden="true">
+                            <path d="m21 21-4.34-4.34"></path>
+                            <circle cx="11" cy="11" r="8"></circle>
+                        </svg>
+                    </span>
+                </span>
+            </button>
+        </div>
     </div>
-</div>
+</header>
