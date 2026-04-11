@@ -12,6 +12,48 @@ html {
     text-wrap: balance
 }
 
+@font-face {
+    font-family: NeuSans;
+    src: url(/src/assets/fonts/NeuSans-Book.27256a60.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: NeuSans;
+    src: url(/src/assets/fonts/NeuSans-Medium.7b11edcf.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: NeuSans;
+    src: url(/src/assets/fonts/NeuSans-Bold.5c45f750.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Boyrun;
+    src: url(/src/assets/fonts/Boyrun-Regular.9732d7a0.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Boyrun;
+    src: url(/src/assets/fonts/Boyrun-Regular.9732d7a0.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+
+
 * {
     box-sizing: border-box
 }
@@ -15921,37 +15963,6 @@ html {
     font-display: swap
 }
 
-@font-face {
-    font-family: NeuSans;
-    src: url(/assets/fonts/NeuSans-Book.27256a60.woff2) format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: NeuSans;
-    src: url(/assets/fonts/NeuSans-Medium.7b11edcf.woff2) format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: NeuSans;
-    src: url(/assets/fonts/NeuSans-Bold.5c45f750.woff2) format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: Boyrun;
-    src: url(/assets/fonts/Boyrun-Regular.9732d7a0.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap
-}
 
 @container scroll-state(scrollable: left) {
     .scroll-fade-auto:before {

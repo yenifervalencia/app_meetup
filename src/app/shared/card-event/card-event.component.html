@@ -1,0 +1,71 @@
+<div data-recommendationid="" data-recommendationsource="" data-eventref="313707591"
+    data-element-name="eventsShelf IRL-Event card variant2" data-testid="eventsShelf IRL-Event card variant2"
+    class="relative flex w-full flex-col overflow-hidden transition-all duration-200 hover:-translate-y-ds2-4 active:scale-98">
+    <a href="https://www.meetup.com/es-ES/odooapps/events/313707591/?eventOrigin=home_logged_out_near_location"
+        class="group inline size-full cursor-pointer hover:no-underline" data-event-label="Event Card">
+        <div
+            class="relative flex aspect-[127/68] flex-shrink-0 items-center justify-center overflow-hidden rounded-ds2-24 transition-all duration-200 group-hover:scale-98 bg-ds2-surface-fill-tertiary-enabled">
+            <div class="absolute left-ds2-12 top-ds2-12 z-10 flex flex-col items-start gap-ds2-4">
+                <div
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max bg-ds2-badge-base-fill-inverted-enabled text-ds2-badge-text-fill-inverted_primary-enabled px-ds2-8 py-ds2-4 gap-ds2-4 ds2-m12">
+                    <span class="truncate px-ds2-2">{{data.amount}}</span>
+                </div>
+            </div>
+            <div>
+                <img [alt]="data.title" fetchpriority="high" width="400" height="180" decoding="async" data-nimg="1"
+                    class="size-full object-cover object-center" [src]="data.img" style="color: transparent;">
+            </div>
+            <div class="absolute right-ds2-8 top-ds2-8 z-10 flex items-center gap-ds2-10">
+                <div class="opacity-100 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100">
+                    <button
+                        class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 bg-ds2-icon_button-base-fill-filled_inverted-enabled hover:bg-ds2-icon_button-base-fill-filled_inverted-hover p-ds2-6 after:hidden backdrop-blur-sm"
+                        data-element-name="indexPage-share-click" data-event-label="Share Event"
+                        data-testid="share-btn-redesign" type="button" data-disabled="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-share text-ds2-icon_button-icon-fill-filled_inverted-enabled hover:text-ds2-icon_button-icon-fill-filled_inverted-hover"
+                            aria-hidden="true">
+                            <path d="M12 2v13"></path>
+                            <path d="m16 6-4-4-4 4"></path>
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col pt-ds2-16">
+            <h3 class="ds2-m18 line-clamp-2 max-w-full text-ds2-text-fill-primary-enabled" [title]="data.title">
+                {{data.title}}</h3>
+            <div class="ds2-r14 mt-ds2-4 flex items-center text-ds2-text-fill-tertiary-enabled">
+                <div class="ds2-r14 min-w-0 truncate text-ds2-text-fill-tertiary-enabled">
+                    <div
+                        class="ds2-r16 flex flex-col leading-5 tracking-tight ds2-r14 min-w-0 truncate text-ds2-text-fill-tertiary-enabled">
+                        <time class="ds2-r14 min-w-0 truncate text-ds2-text-fill-tertiary-enabled"
+                            datetime="2026-04-20T19:30:00-05:00[America/Bogota]"
+                            [title]="data.date +'(hora estándar de Colombia)'">
+                            <span>{{data.date}} </span>
+                        </time>
+                    </div>
+                </div>
+                <div class="flex items-center" *ngIf="data.online">
+                    <span class="mx-ds2-4 text-ds2-text-fill-tertiary-enabled">·</span>
+                    <div
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max bg-ds2-badge-base-fill-neutral_filled-enabled text-ds2-badge-text-fill-neutral_filled-enabled px-ds2-6 py-ds2-2 gap-ds2-2 ds2-m11 [&amp;_svg]:fill-current">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.697056274847714" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-video flex-shrink-0 text-ds2-badge-icon-fill-neutral_filled-enabled"
+                            aria-hidden="true">
+                            <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5">
+                            </path>
+                            <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                        </svg><span class="truncate px-ds2-2">En línea</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ds2-r14 mt-ds2-2 flex items-center text-ds2-text-fill-tertiary-enabled">
+                <div class="flex-shrink min-w-0 truncate">por {{data.company}}</div>
+            </div>
+        </div>
+    </a>
+</div>

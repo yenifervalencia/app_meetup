@@ -1,0 +1,38 @@
+<div class="mx-auto my-ds2-32 max-w-full lg:my-ds2-80">
+    <!-- Title -->
+    <div class="px-ds2-20">
+        <h2
+            class="ds2-b24 flex flex-wrap items-baseline gap-x-ds2-8 gap-y-ds2-8 text-ds2-text-fill-primary-enabled md:ds2-b32 pb-ds2-32 ds2-container-lg lg:pb-ds2-48">
+            Explora las categorías principales</h2>
+    </div>
+    <!-- Carousel cards desktop -->
+    <div class="group/carousel relative hidden overflow-visible px-ds2-20 md:block xl:px-0">
+        <button
+            class="items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 p-ds2-12 absolute right-ds2-32 top-1/2 z-20 hidden size-ds2-40 -translate-y-1/2 translate-x-1/2 transform opacity-0 backdrop-blur-sm transition-opacity duration-200 group-hover/carousel:opacity-100 lg:block"
+            aria-label="Scroll right" type="button" data-disabled="false">
+            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                style="gap: inherit;">
+                <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden" style="gap: inherit;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.146625258399798" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide shrink-0" aria-hidden="true">
+                        <path d="M13.083 3.888c1.671 3.818 3.675 5.408 8.112 8.112-4.452 2.475-6.321 4.191-8.112 8.112">
+                        </path>
+                        <path d="M2.806 12h18"></path>
+                    </svg>
+                </span>
+            </span>
+        </button>
+        <div class="flex gap-ds2-16 overflow-x-scroll scroll-smooth pt-ds2-4 hide-scrollbar md:mask-fade-right lg:mask-fade-none"
+            style="scrollbar-width: none; padding-left: max(-600px + 50vw, 0px); padding-right: max(-600px + 50vw, 0px);">
+
+            <div class="flex-shrink-0" *ngFor="let data of categories">
+                <app-card-category [data]="data"></app-card-category>
+            </div>
+        </div>
+    </div>
+    <!-- cards Movil -->
+    <div class="grid grid-cols-2 gap-ds2-12 px-ds2-20 md:hidden">
+        <app-card-category *ngFor="let data of categories" [data]="data"></app-card-category>
+    </div>
+</div>
