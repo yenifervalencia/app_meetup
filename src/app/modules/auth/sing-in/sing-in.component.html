@@ -1,0 +1,293 @@
+<div role="dialog" id="radix-:rad:" aria-describedby="radix-:raf:" aria-labelledby="radix-:rae:" data-state="open"
+    data-slot="modal-content"
+    class="scrollbar-none fixed left-1/2 top-1/2 z-50 flex max-h-[min(816px,calc(100vh-64px))] w-full -translate-x-1/2 -translate-y-1/2 flex-col overflow-y-auto rounded-ds2-28 bg-ds2-floating-base-fill-enabled shadow-ds2-shadow-lg-default data-[state=open]:animate-modalFadeIn data-[state=closed]:animate-modalFadeOut max-w-[min(500px,calc(100vw-64px))]"
+    tabindex="-1" style="pointer-events: auto;">
+    <h2 id="radix-:rae:" data-slot="modal-title" class="ds2-m16 text-ds2-text-fill-primary-enabled sr-only"></h2>
+    <div
+        class="flex w-full flex-row items-center justify-between gap-ds2-16 p-ds2-16 sticky top-0 z-10 bg-ds2-surface-fill-primary-enabled">
+        <div class="absolute opacity-0" tabindex="0"></div>
+        <button
+            class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 hover:after:bg-ds2-icon_button-base-fill-secondary-hover opacity-0 pointer-events-none"
+            type="button" data-disabled="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x text-ds2-icon_button-icon-fill-secondary-enabled hover:text-ds2-icon_button-icon-fill-secondary-hover"
+                aria-hidden="true">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+        <div class="flex min-w-0 flex-1 flex-row items-center justify-center"></div>
+        <button (click)="closed.emit(true)"
+            class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 hover:after:bg-ds2-icon_button-base-fill-secondary-hover"
+            data-slot="modal-close" type="button" data-disabled="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x text-ds2-icon_button-icon-fill-secondary-enabled hover:text-ds2-icon_button-icon-fill-secondary-hover"
+                aria-hidden="true">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="flex w-full flex-col items-center px-ds2-28">
+        <section class="flex w-full flex-col items-center pb-ds2-48 relative">
+            <span class="sr-only" aria-live="polite">Esta es la vista de inicio de sesión
+            </span>
+            <form class="w-full" [formGroup]="signInForm">
+                <div class="relative flex flex-col">
+                    <div class="relative w-full text-center">
+                        <h1 class="text-ds2-text-fill-primary-enabled ds2-b32">Iniciar sesión</h1>
+                    </div>
+                </div>
+                <div class="flex w-full items-center gap-y-ds2-16">
+                    <div class="w-full">
+                        <div class="flex w-full flex-col items-center gap-y-ds2-16 mt-ds2-32">
+                            <div class="flex w-full flex-col gap-y-ds2-12">
+                                <button
+                                    class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full ds2-m18 text-ds2-text-fill-primary-enabled bg-ds2-button-base-fill-social-enabled hover:bg-ds2-button-base-fill-social-hover active:bg-ds2-button-base-fill-social-pressed border border-ds2-button-base-stroke-social-enabled hover:border-ds2-button-base-stroke-social-hover active:border-ds2-button-base-stroke-social-pressed"
+                                    id="google-login" data-testid="google-login"
+                                    data-element-name="login-with-google-btn" data-event-label="login-with-google"
+                                    type="button" data-disabled="false">
+                                    <span
+                                        class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                        style="gap: inherit;">
+                                        <span
+                                            class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                            style="gap: inherit;">
+                                            <div class="shrink-0" style="width: 16px; height: 16px;">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 20 20" fill="none"
+                                                        class="injected-svg w-full h-full"
+                                                        data-src="https://secure.meetupstatic.com/next/images/complex-icons/google.svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <title>google icon</title>
+                                                        <path
+                                                            d="M10.1836 8.3302V11.8868H15.1261C14.909 13.0306 14.2578 13.9991 13.281 14.6503L16.2615 16.9629C17.998 15.36 18.9999 13.0056 18.9999 10.2088C18.9999 9.55758 18.9415 8.93136 18.8329 8.3303L10.1836 8.3302Z"
+                                                            fill="#4285F4"></path>
+                                                        <path
+                                                            d="M5.03702 11.7479L4.3648 12.2625L1.98535 14.1159C3.49648 17.1131 6.59367 19.1836 10.1836 19.1836C12.6632 19.1836 14.742 18.3655 16.2615 16.9629L13.281 14.6502C12.4628 15.2013 11.4192 15.5353 10.1836 15.5353C7.79588 15.5353 5.76718 13.9239 5.04078 11.7532L5.03702 11.7479Z"
+                                                            fill="#34A853"></path>
+                                                        <path
+                                                            d="M1.98509 5.88403C1.35896 7.11961 1 8.51388 1 9.99994C1 11.486 1.35896 12.8803 1.98509 14.1159C1.98509 14.1241 5.04081 11.7448 5.04081 11.7448C4.85714 11.1938 4.74857 10.6094 4.74857 9.99985C4.74857 9.3903 4.85714 8.80592 5.04081 8.25491L1.98509 5.88403Z"
+                                                            fill="#FBBC05"></path>
+                                                        <path
+                                                            d="M10.1838 4.47306C11.5363 4.47306 12.7386 4.94058 13.6987 5.84227L16.3285 3.21243C14.7339 1.72636 12.6634 0.816284 10.1838 0.816284C6.59385 0.816284 3.49648 2.87844 1.98535 5.88402L5.04098 8.25509C5.76728 6.08437 7.79607 4.47306 10.1838 4.47306Z"
+                                                            fill="#EA4335"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span
+                                                class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
+                                                <span class="block min-w-0 max-w-full truncate">Inicia sesión con
+                                                    Google</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full ds2-m18 text-ds2-text-fill-primary-enabled bg-ds2-button-base-fill-social-enabled hover:bg-ds2-button-base-fill-social-hover active:bg-ds2-button-base-fill-social-pressed border border-ds2-button-base-stroke-social-enabled hover:border-ds2-button-base-stroke-social-hover active:border-ds2-button-base-stroke-social-pressed"
+                                    id="apple-login" data-testid="apple-login" data-element-name="login-with-apple-btn"
+                                    data-event-label="login-with-apple" type="button" data-disabled="false">
+                                    <span
+                                        class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                        style="gap: inherit;">
+                                        <span
+                                            class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                            style="gap: inherit;">
+                                            <div class="shrink-0" style="width: 16px; height: 16px;">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 21 20" fill="none"
+                                                        class="injected-svg w-full h-full"
+                                                        data-src="https://secure.meetupstatic.com/next/images/complex-icons/apple.svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <title>apple icon</title>
+                                                        <path
+                                                            d="M17.7755 14.9741C17.5062 15.5962 17.1874 16.1689 16.818 16.6955C16.3146 17.4133 15.9024 17.9101 15.5847 18.186C15.0923 18.6389 14.5646 18.8708 13.9996 18.884C13.594 18.884 13.1049 18.7686 12.5355 18.5345C11.9642 18.3014 11.4392 18.186 10.9592 18.186C10.4557 18.186 9.9158 18.3014 9.33827 18.5345C8.75986 18.7686 8.2939 18.8906 7.93764 18.9027C7.39583 18.9258 6.85578 18.6873 6.31672 18.186C5.97267 17.8859 5.54232 17.3715 5.02678 16.6427C4.47366 15.8645 4.01891 14.962 3.66265 13.9331C3.28111 12.8218 3.08984 11.7457 3.08984 10.7038C3.08984 9.51038 3.34772 8.48107 3.86425 7.61851C4.27019 6.92567 4.81024 6.37913 5.48615 5.97791C6.16206 5.5767 6.89239 5.37224 7.67888 5.35916C8.10923 5.35916 8.67357 5.49228 9.37487 5.75389C10.0742 6.01639 10.5232 6.1495 10.7201 6.1495C10.8673 6.1495 11.3661 5.99385 12.2117 5.68354C13.0114 5.39576 13.6864 5.27661 14.2393 5.32355C15.7375 5.44446 16.8631 6.03507 17.6117 7.09912C16.2717 7.91101 15.6089 9.04816 15.6221 10.5069C15.6342 11.6432 16.0464 12.5888 16.8565 13.3395C17.2237 13.688 17.6337 13.9573 18.0898 14.1486C17.9909 14.4355 17.8865 14.7103 17.7755 14.9741ZM14.3393 1.45251C14.3393 2.34312 14.0139 3.17467 13.3654 3.94435C12.5827 4.85934 11.6361 5.38807 10.6095 5.30464C10.5964 5.19779 10.5889 5.08534 10.5889 4.96718C10.5889 4.1122 10.9611 3.1972 11.622 2.44907C11.952 2.07028 12.3717 1.75532 12.8806 1.50407C13.3885 1.25657 13.8688 1.11969 14.3206 1.09625C14.3338 1.21531 14.3393 1.33438 14.3393 1.4525V1.45251Z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span
+                                                class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
+                                                <span class="block min-w-0 max-w-full truncate">Inicia sesión con
+                                                    Apple</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full ds2-m18 text-ds2-text-fill-primary-enabled bg-ds2-button-base-fill-social-enabled hover:bg-ds2-button-base-fill-social-hover active:bg-ds2-button-base-fill-social-pressed border border-ds2-button-base-stroke-social-enabled hover:border-ds2-button-base-stroke-social-hover active:border-ds2-button-base-stroke-social-pressed"
+                                    id="facebook-login" data-testid="facebook-login"
+                                    data-element-name="login-with-facebook-btn" data-event-label="login-with-facebook"
+                                    type="button" data-disabled="false">
+                                    <span
+                                        class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                        style="gap: inherit;">
+                                        <span
+                                            class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                            style="gap: inherit;">
+                                            <div class="shrink-0" style="width: 16px; height: 16px;">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 21 20" fill="none"
+                                                        class="injected-svg w-full h-full"
+                                                        data-src="https://secure.meetupstatic.com/next/images/complex-icons/facebook.svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <title>facebook icon</title>
+                                                        <path
+                                                            d="M19.5 10C19.5 5.02944 15.4706 0.999998 10.5 0.999998C5.52944 0.999998 1.5 5.02944 1.5 10C1.5 14.2208 4.40574 17.7624 8.32582 18.735V12.7503H6.46994V10H8.32582V8.81491C8.32582 5.7516 9.7121 4.33176 12.7195 4.33176C13.2897 4.33176 14.2736 4.44354 14.676 4.55536V7.0485C14.4636 7.02615 14.0947 7.01495 13.6363 7.01495C12.1605 7.01495 11.5903 7.57396 11.5903 9.02735V10H14.5301L14.025 12.7503H11.5903V18.9341C16.0466 18.3958 19.5 14.6014 19.5 10Z"
+                                                            fill="#0866FF"></path>
+                                                        <path
+                                                            d="M14.0248 12.7503L14.5299 10H11.5902V9.02732C11.5902 7.57392 12.1603 7.01495 13.6361 7.01495C14.0945 7.01495 14.4634 7.02611 14.6758 7.04847V4.55536C14.2733 4.44355 13.2895 4.33173 12.7193 4.33173C9.71192 4.33173 8.3256 5.7516 8.3256 8.81492V10H6.46973V12.7503H8.3256V18.735C9.02195 18.9077 9.75005 19 10.4998 19C10.8689 19 11.2327 18.9772 11.5902 18.9341V12.7503H14.0248Z"
+                                                            fill="white"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span
+                                                class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
+                                                <span class="block min-w-0 max-w-full truncate">Inicia sesión con
+                                                    Facebook</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="flex w-full items-center pb-ds2-16">
+                                <hr class="flex-grow border-t border-ds2-surface-stroke-tertiary-enabled">
+                                <span class="ds2-r16 px-ds2-12 text-ds2-text-fill-tertiary-enabled">o
+                                </span>
+                                <hr class="flex-grow border-t border-ds2-surface-stroke-tertiary-enabled">
+                            </div>
+                        </div>
+                        <div class="flex w-full flex-col gap-y-ds2-16">
+                            <div class="flex flex-col gap-ds2-8 interpolate-size-allow">
+                                <div class="flex flex-row items-center gap-ds2-6">
+                                    <span
+                                        class="flex flex-row items-center ds2-m16 text-ds2-input-text_primary-fill-enabled">Correo
+                                        electrónico</span>
+                                </div>
+                                <div class="relative flex flex-row items-center">
+                                    <input type="email"
+                                        class="peer w-full transition-all duration-150 placeholder:text-ds2-input-text_field-fill-enabled focus:outline-none rounded-ds2-max border text-ds2-input-text_field-fill-typed bg-ds2-input-base-fill-enabled border-ds2-input-base-stroke-enabled disabled:bg-ds2-input-base-fill-disabled disabled:text-ds2-input-text_field-fill-disabled disabled:border-ds2-input-base-stroke-disabled disabled:placeholder:text-ds2-input-text_field-fill-disabled disabled:opacity-50 disabled:cursor-not-allowed focus:border-ds2-input-base-stroke-active focus:shadow-ds2-shadow-input-base-active ds2-r16 py-ds2-12 px-ds2-16"
+                                        aria-required="true" id="email" name="email" data-testid="email"
+                                        inputmode="email" formControlName="email">
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-ds2-8 interpolate-size-allow">
+                                <div class="flex flex-row items-center gap-ds2-6">
+                                    <span
+                                        class="flex flex-row items-center ds2-m16 text-ds2-input-text_primary-fill-enabled">Contraseña</span>
+                                </div>
+                                <div class="relative flex flex-row items-center">
+                                    <input [type]="type"
+                                        class="peer w-full transition-all duration-150 placeholder:text-ds2-input-text_field-fill-enabled focus:outline-none rounded-ds2-max border text-ds2-input-text_field-fill-typed bg-ds2-input-base-fill-enabled border-ds2-input-base-stroke-enabled disabled:bg-ds2-input-base-fill-disabled disabled:text-ds2-input-text_field-fill-disabled disabled:border-ds2-input-base-stroke-disabled disabled:placeholder:text-ds2-input-text_field-fill-disabled disabled:opacity-50 disabled:cursor-not-allowed focus:border-ds2-input-base-stroke-active focus:shadow-ds2-shadow-input-base-active ds2-r16 py-ds2-12 px-ds2-16 pr-ds2-44"
+                                        id="current-password" data-testid="current-password"
+                                        autocomplete="current-password" name="current-password" formControlName="password">
+                                    <button (click)=" type === 'password' ? 'text' :'password';" type="button"
+                                        aria-label="Show password"
+                                        class="peer-not-placeholder-shown:text-ds2-input-icon-fill-enabled flex items-center peer-placeholder-shown:text-ds2-input-icon-fill-enabled active:scale-92 disabled:active:scale-100 transition-colors duration-150 disabled:cursor-not-allowed absolute right-ds2-16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+                                            </path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex w-full justify-center">
+                                <div class="w-[304px] h-[78px]">
+                                    <div class="flex w-full flex-col justify-center overflow-visible">
+                                        <div>
+                                            <div style="width: 304px; height: 78px;">
+                                                <div>
+                                                    <iframe title="reCAPTCHA" width="304" height="78"
+                                                        role="presentation" name="a-ce4327k29jbr" frameborder="0"
+                                                        scrolling="no"
+                                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcA8EUUAAAAAG17qfEfNaX6H8ozmI-IvmokZUnZ&amp;co=aHR0cHM6Ly93d3cubWVldHVwLmNvbTo0NDM.&amp;hl=es-419&amp;v=kUYUkUlSyqkjTSMaN2w3RaOh&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=7xeh2hej210m"></iframe>
+                                                </div>
+                                                <textarea id="g-recaptcha-response-1" name="g-recaptcha-response"
+                                                    class="g-recaptcha-response"
+                                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                            </div>
+                                            <iframe style="display: none;"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-ds2-12">
+                                <button type="button" role="checkbox" aria-checked="true" data-state="checked"
+                                    value="on" id="rememberMe"
+                                    class="shrink-0 size-ds2-20 rounded-ds2-6 transition-colors duration-200 ease-out bg-ds2-checkbox-base-fill-primary-checked-enabled hover:md:bg-ds2-checkbox-base-fill-primary-checked-hover border-0">
+                                    <span data-state="checked" class="flex items-center justify-center"
+                                        style="pointer-events: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-check size-ds2-16 text-ds2-checkbox-icon-fill-primary-enabled"
+                                            aria-hidden="true">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <input type="checkbox" aria-hidden="true" name="rememberMe" tabindex="-1" value="on"
+                                    checked=""
+                                    style="position: absolute; pointer-events: none; opacity: 0; margin: 0px; transform: translateX(-100%); width: 20px; height: 20px;">
+                                <div class="flex grow flex-col gap-ds2-4">
+                                    <label for="rememberMe"
+                                        class="ds2-m14 text-ds2-text-fill-primary-enabled cursor-pointer">Mantenerme
+                                        conectado</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-10 ds2-m18 px-ds2-24 py-ds2-12 w-full my-ds2-16"
+                            data-testid="submit" name="submitButton" data-element-name="login-submit-btn"
+                            data-event-label="login-with-email" type="submit" [attr.data-disabled]="signInForm.invalid"
+                            [disabled]="signInForm.invalid" (click)="submit()">
+                            <span
+                                class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                style="gap: inherit;">
+                                <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                    style="gap: inherit;">
+                                    <span
+                                        class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
+
+                                        <span class="block min-w-0 max-w-full truncate">Iniciar
+                                            sesión</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative flex w-full flex-col items-center gap-y-ds2-16 pt-ds2-8">
+                    <div class="ds2-r16 text-ds2-text-fill-primary-enabled">
+                        <a href="" data-element-name="login-forgot-password-link"
+                            class="ds2-m16 text-ds2-text-fill-brand_primary-enabled hover:no-underline">¿Olvidaste tu
+                            contraseña?</a>
+                    </div>
+                    <div class="ds2-r16">
+                        <span class="text-ds2-text-fill-primary-enabled">¿Problemas para iniciar
+                            sesión?</span>
+                        <a href="" class="ds2-m16 text-ds2-text-fill-brand_primary-enabled hover:no-underline">Obtener
+                            ayuda</a>
+                    </div>
+                    <div>
+                        <span class="ds2-r16 text-ds2-text-fill-primary-enabled">¿Aún no tienes una cuenta?</span>
+                        <a href="" class="ds2-m16 text-ds2-text-fill-brand_primary-enabled hover:no-underline"
+                            data-element-name="login-sign-up-link" data-event-label="signup-on-login">Regístrate
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
