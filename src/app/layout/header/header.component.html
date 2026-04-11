@@ -190,7 +190,7 @@
                     </div>
                     <!-- Button login, register -->
                     <div class="flex items-center gap-ds2-20">
-                        <button
+                        <button (click)="login=true"
                             class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
                             data-testid="login-link" data-event-label="Login click variant2"
                             data-element-name="header-loginLink" type="button" data-disabled="false">
@@ -292,7 +292,7 @@
                         </span>
                     </button>
                 </div>
-                <button
+                <button (click)="login=true"
                     class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-primary-enabled hover:text-ds2-text_button-content-fill-primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-primary-disabled gap-ds2-4 ds2-m14 before:-inset-x-ds2-10 before:-inset-y-ds2-4"
                     data-testid="login-link" data-event-label="Login click variant2"
                     data-element-name="header-loginLink" type="button" data-disabled="false">
@@ -352,3 +352,10 @@
         </div>
     </div>
 </header>
+
+<div *ngIf="login">
+    <div data-state="open" data-slot="modal-overlay"
+        class="fixed inset-0 z-50 bg-ds2-overlay-fill-tertiary-enabled backdrop-blur-sm data-[state=closed]:animate-overlayFadeOut data-[state=open]:animate-overlayFadeIn"
+        data-aria-hidden="true" aria-hidden="true" style="pointer-events: auto;"></div>
+    <app-sing-in (closed)="login=false"></app-sing-in>
+</div>

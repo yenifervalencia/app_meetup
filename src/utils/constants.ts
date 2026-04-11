@@ -278,3 +278,8 @@ export const dataFriends: any[] = [
       'Estudios de todo el mundo han tratado de dar respuesta a esta pregunta. Descubre los tres niveles de amistad y cómo puedes llegar a ellos.',
   },
 ];
+
+export const user: any ={
+  email: 'prueba@yopmail.com',
+  password: 'prueba123*#'
+}
