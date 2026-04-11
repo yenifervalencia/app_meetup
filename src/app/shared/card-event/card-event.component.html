@@ -5,7 +5,7 @@
         class="group inline size-full cursor-pointer hover:no-underline" data-event-label="Event Card">
         <div
             class="relative flex aspect-[127/68] flex-shrink-0 items-center justify-center overflow-hidden rounded-ds2-24 transition-all duration-200 group-hover:scale-98 bg-ds2-surface-fill-tertiary-enabled">
-            <div class="absolute left-ds2-12 top-ds2-12 z-10 flex flex-col items-start gap-ds2-4">
+            <div *ngIf="data.amount" class="absolute left-ds2-12 top-ds2-12 z-10 flex flex-col items-start gap-ds2-4">
                 <div
                     class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max bg-ds2-badge-base-fill-inverted-enabled text-ds2-badge-text-fill-inverted_primary-enabled px-ds2-8 py-ds2-4 gap-ds2-4 ds2-m12">
                     <span class="truncate px-ds2-2">{{data.amount}}</span>
@@ -65,6 +65,9 @@
             </div>
             <div class="ds2-r14 mt-ds2-2 flex items-center text-ds2-text-fill-tertiary-enabled">
                 <div class="flex-shrink min-w-0 truncate">por {{data.company}}</div>
+            </div>
+            <div class="ds2-r14 mt-ds2-2 flex max-w-[95%] flex-row text-ds2-text-fill-tertiary-enabled" *ngIf="data.address">
+                <span class="truncate">{{data.address}} </span>
             </div>
         </div>
     </a>

@@ -1,0 +1,16 @@
+<section class="flex flex-col gap-ds2-32 !gap-ds2-24">
+    <div class="flex items-baseline justify-between">
+        <div class="flex gap-ds2-12 items-center">
+            <div class="flex flex-col gap-ds2-4">
+                <h2 class="ds2-b24 text-ds2-text-fill-primary-enabled">Temas relacionados
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap gap-ds2-8">
+        <div *ngFor="let item of data"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max text-ds2-badge-text-fill-neutral-enabled border border-ds2-badge-base-stroke-neutral-enabled px-ds2-10 py-ds2-6 gap-ds2-4 ds2-m13 max-w-tag cursor-pointer truncate">
+            <span class="truncate px-ds2-2">{{item}}</span>
+        </div>
+    </div>
+</section>

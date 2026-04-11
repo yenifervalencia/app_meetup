@@ -1,0 +1,57 @@
+<div class="flex flex-col gap-ds2-16 lg:gap-ds2-24">
+    <div class="flex flex-col gap-ds2-12 lg:gap-ds2-20">
+        <h1 class="ds2-b32 text-ds2-text-fill-primary-enabled lg:ds2-b48">{{data.title}}
+        </h1>
+    </div>
+    <div class="flex flex-row items-end gap-ds2-12">
+        <div class="flex flex-1">
+            <a class="grow hover:no-underline" data-event-label="hosted-by" aria-label="Organizado por Yadira R."
+                href="">
+                <div class="flex grow flex-wrap items-center gap-x-ds2-16 gap-y-ds2-6">
+                    <div class="relative">
+                        <div class="relative flex items-center justify-center rounded-ds2-max size-[40px]">
+                            <div
+                                class="flex size-full select-none items-center justify-center overflow-hidden rounded-ds2-max outline-1 -outline-offset-1 outline-ds2-avatar-base-stroke-enabled [outline-style:solid]">
+                                <img alt="Foto del usuario Yadira Rayo" draggable="false"
+                                    aria-label="Foto del usuario Yadira Rayo" loading="lazy" width="40" height="40"
+                                    decoding="async" data-nimg="1" class="size-full object-cover"
+                                    [srcset]="data.dataExtra.organizedImg" [src]="data.dataExtra.organizedImg"
+                                    style="color: transparent;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex grow items-center justify-between">
+                        <div>
+                            <p class="ds2-r14 text-ds2-text-fill-primary-enabled lg:ds2-r18">
+                                Organizado por <span class="font-semibold">{{data.dataExtra.organized}}</span>
+                            </p>
+                        </div>
+                        <div class="lg:hidden">
+                            <button
+                                class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-secondary-enabled data-[disabled=false]:bg-ds2-button-base-fill-secondary-enabled shadow-ds2-shadow-button-base-secondary-enabled hover:shadow-ds2-shadow-button-base-secondary-hover active:shadow-ds2-shadow-button-base-secondary-pressed data-[disabled=true]:text-ds2-button-content-fill-secondary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-secondary-disabled transition-shadow duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-secondary-hover before:shadow-ds2-shadow-button-base-secondary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-secondary-pressed after:shadow-ds2-shadow-button-base-secondary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 p-ds2-10"
+                                type="button" data-disabled="false">
+                                <span
+                                    class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                    style="gap: inherit;">
+                                    <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                        style="gap: inherit;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.146625258399798" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-share shrink-0"
+                                            aria-hidden="true">
+                                            <path d="M12 2v13"></path>
+                                            <path d="m16 6-4-4-4 4"></path>
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

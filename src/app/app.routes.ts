@@ -13,6 +13,10 @@ export const routes: Routes = [
         path: 'home',
         loadChildren: () => import('./modules/main/home/home.routes'),
       },
+      {
+        path: 'event',
+        loadChildren: () => import('./modules/main/events/events.routes'),
+      },
     ],
   },
 ];

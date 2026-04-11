@@ -1,0 +1,15 @@
+<div class="flex w-full items-center gap-ds2-16 md:px-ds2-20">
+    <img alt="calendar icon" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+        [srcset]="data.icon"
+        [src]="data.icon"
+        style="color: transparent;">
+    <div class="flex w-full py-ds2-8 md:border-b md:border-ds2-surface-stroke-secondary-enabled md:py-ds2-20">
+        <div>
+            <p class="ds2-k16 text-ds2-text-fill-primary-enabled">
+                {{data.title}}
+            </p>
+            <p *ngIf="data.desc" class="ds2-r16 text-ds2-text-fill-tertiary-enabled">{{data.desc}}</p>
+        </div>
+    </div>
+    <div class="size-ds2-20 shrink-0"></div>
+</div>

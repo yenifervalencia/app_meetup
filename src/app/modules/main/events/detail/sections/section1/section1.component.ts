@@ -1,0 +1,12 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-section1',
+  imports: [],
+  templateUrl: './section1.component.html',
+  styleUrl: './section1.component.css',
+  standalone: true,
+})
+export class Section1Component {
+  @Input() data: any = [];
+}
