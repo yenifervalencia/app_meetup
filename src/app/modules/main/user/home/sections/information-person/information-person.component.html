@@ -1,0 +1,24 @@
+<button aria-label="Ver perfil"
+    class="group flex w-full max-w-[360px] items-center gap-ds2-16 rounded-ds2-max bg-ds2-surface-fill-primary-enabled p-ds2-20 shadow-ds2-shadow-xs-border transition-all duration-200">
+    <div class="relative flex items-center justify-center rounded-ds2-max size-[40px]">
+        <div
+            class="flex size-full select-none items-center justify-center overflow-hidden rounded-ds2-max outline-1 -outline-offset-1 outline-ds2-avatar-base-stroke-enabled [outline-style:solid]">
+            <div class="size-[40px] flex items-center justify-center rounded-ds2-max"
+                style="background-image: url(&quot;https://secure.meetupstatic.com/next/images/avatar/background-4.webp&quot;); background-size: cover; background-position: center center;">
+                <span class="ds2-m13 ds2-m16 text-ds2-avatar-text-fill-magenta">{{(data.name).charAt(0)}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="flex min-w-0 flex-1 flex-col gap-ds2-2">
+        <p class="ds2-m14 truncate text-left text-ds2-text-fill-primary-enabled">{{data.name}}</p>
+        <p class="ds2-r12 truncate text-left text-ds2-text-fill-secondary-enabled">{{data.city}}</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+        stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide shrink-0 text-ds2-icon-fill-tertiary-enabled transition-all group-hover:translate-x-1"
+        aria-hidden="true">
+        <path
+            d="M5.69515 2.90246C6.07363 2.73433 6.51716 2.90492 6.68539 3.28332C8.09934 6.46618 10.262 7.53226 14.367 9.83313C14.6039 9.96605 14.7502 10.2168 14.7498 10.4884C14.7494 10.7602 14.6017 11.0106 14.3641 11.1427C10.2849 13.4103 8.1455 14.4348 6.68441 17.6935C6.51491 18.0713 6.0711 18.2398 5.6932 18.0704C5.31524 17.901 5.1458 17.4572 5.31527 17.0792C6.84288 13.6724 9.13215 12.32 12.4549 10.4835C9.10909 8.61655 6.79981 7.23663 5.31429 3.8927C5.14617 3.51425 5.31681 3.07072 5.69515 2.90246Z">
+        </path>
+    </svg>
+</button>
