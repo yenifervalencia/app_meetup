@@ -1,1 +1,29 @@
-<p>home works!</p>
+<div class="flex flex-grow flex-col">
+    <div class="min-h-screen">
+        <div class="flex flex-row gap-ds2-60 lg:px-ds2-40 lg:pb-ds2-56 lg:pt-ds2-24">
+            <aside class="hidden max-w-[360px] flex-1 flex-col items-center gap-ds2-10 lg:flex">
+                <app-information-person class="w-full" [data]="dataPersonal"></app-information-person>
+                <app-attending class="w-full" [type]="'desktop'"></app-attending>
+                <app-your-groups [type]="'desktop'"></app-your-groups>
+
+            </aside>
+            <main class="flex min-w-0 flex-1 flex-col gap-ds2-8">
+                <div class="px-ds2-20 lg:px-0">
+                    <div class="flex flex-col gap-ds2-16"></div>
+                </div>
+                <div class="flex flex-col lg:gap-ds2-48 lg:pb-ds2-56 lg:pt-ds2-28">
+                    <!-- Events -->
+                    <app-for-you [events]="nearbyEvents"></app-for-you>
+                    <div class="block lg:hidden">
+                        <app-attending [type]="'movil'"></app-attending>
+                    </div>
+                    <div class="block lg:hidden">
+                        <app-your-groups [type]="'movil'"></app-your-groups>
+                    </div>
+                    <!-- Groups -->
+                    <app-groups></app-groups>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

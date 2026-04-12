@@ -4,16 +4,12 @@ import { CommonModule } from '@angular/common';
 import { ButtonPurpleComponent } from '../../../../../../shared/button-purple/button-purple.component';
 
 @Component({
-  selector: 'app-others',
+  selector: 'app-for-you',
   imports: [CardEventComponent, CommonModule, ButtonPurpleComponent],
-  templateUrl: './others.component.html',
-  styleUrl: './others.component.css',
-  standalone: true,
+  templateUrl: './for-you.component.html',
+  styleUrl: './for-you.component.css',
+  standalone: true
 })
-export class OthersComponent {
-  @Input() set events(value: any[]){
-    this.eventsAux = value.map(({ amount, ...rest }) => rest);
-  }
-  public eventsAux: any[]=[];
-
+export class ForYouComponent {
+  @Input() events: any[] = [];
 }

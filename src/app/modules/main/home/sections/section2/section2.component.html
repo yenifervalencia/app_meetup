@@ -8,7 +8,7 @@
                     class="ds2-b24 flex flex-wrap items-baseline gap-x-ds2-8 gap-y-ds2-8 text-ds2-text-fill-primary-enabled md:ds2-b32">
                     Eventos cerca de
                     <div class="inline-flex items-center gap-ds2-10">
-                        <a href="https://www.meetup.com/es-ES/find/?source=EVENTS&amp;eventType=inPerson&amp;sortField=DATETIME&amp;distance=hundredMiles&amp;location=co--Cali"
+                        <a href=""
                             class="ds2-b24 text-ds2-text_button-content-fill-brand_primary-enabled md:ds2-b32 hover:text-ds2-text_button-content-fill-brand_primary-hover hover:no-underline"
                             data-event-label="eventsShelf IRL-location variant2">Cali, CO
                         </a>
@@ -48,19 +48,10 @@
                         </button>
                     </div>
                 </h2>
-                <a class="items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 whitespace-nowrap hidden md:block"
-                    data-disabled="false" data-event-label="eventsShelf IRL-seeAll variant2"
-                    href="https://www.meetup.com/es-ES/find/?source=EVENTS&amp;eventType=inPerson&amp;sortField=DATETIME&amp;distance=hundredMiles&amp;location=co--Cali">
-                    <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
-                        style="gap: inherit;">
-                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
-                            style="gap: inherit;">
-                            <span class="min-w-0 max-w-full truncate px-ds2-2">Ver todos
-                                los eventos
-                            </span>
-                        </span>
-                    </span>
-                </a>
+                <app-button-purple [title]="'Ver todos los eventos'"
+                    [classB]="'items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 whitespace-nowrap hidden md:block'">
+                </app-button-purple>
+
             </div>
             <!-- Items -->
             <div class="flex flex-col gap-ds2-24 md:hidden">
@@ -77,20 +68,9 @@
     <!-- Button -->
     <div class="pb-ds2-32 ds2-container-lg md:pb-ds2-48">
         <div class="px-ds2-20 pb-ds2-32 pt-ds2-28 md:hidden">
-            <a class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-secondary-enabled data-[disabled=false]:bg-ds2-button-base-fill-secondary-enabled shadow-ds2-shadow-button-base-secondary-enabled hover:shadow-ds2-shadow-button-base-secondary-hover active:shadow-ds2-shadow-button-base-secondary-pressed data-[disabled=true]:text-ds2-button-content-fill-secondary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-secondary-disabled transition-shadow duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-secondary-hover before:shadow-ds2-shadow-button-base-secondary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-secondary-pressed after:shadow-ds2-shadow-button-base-secondary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full bg-gradient-to-b from-ds2-surface-fill-secondary-enabled to-ds2-surface-fill-tertiary-enabled"
-                data-disabled="false" data-event-label="eventsShelf IRL-seeAll variant2"
-                href="https://www.meetup.com/es-ES/find/?source=EVENTS&amp;eventType=inPerson&amp;sortField=DATETIME&amp;distance=hundredMiles&amp;location=co--Cali">
-                <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
-                    style="gap: inherit;">
-                    <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
-                        style="gap: inherit;">
-                        <span class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden"><span
-                                class="block min-w-0 max-w-full truncate">Ver todos los
-                                eventos</span>
-                        </span>
-                    </span>
-                </span>
-            </a>
+            <app-button-purple [title]="'Ver todos los eventos'"
+                [classB]="'inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-secondary-enabled data-[disabled=false]:bg-ds2-button-base-fill-secondary-enabled shadow-ds2-shadow-button-base-secondary-enabled hover:shadow-ds2-shadow-button-base-secondary-hover active:shadow-ds2-shadow-button-base-secondary-pressed data-[disabled=true]:text-ds2-button-content-fill-secondary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-secondary-disabled transition-shadow duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-secondary-hover before:shadow-ds2-shadow-button-base-secondary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-secondary-pressed after:shadow-ds2-shadow-button-base-secondary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full bg-gradient-to-b from-ds2-surface-fill-secondary-enabled to-ds2-surface-fill-tertiary-enabled'">
+            </app-button-purple>
         </div>
     </div>
     <!-- Next events -->
@@ -102,18 +82,9 @@
                     <h2
                         class="ds2-b24 flex flex-wrap items-baseline gap-x-ds2-8 gap-y-ds2-8 text-ds2-text-fill-primary-enabled md:ds2-b32">
                         Próximos eventos en línea</h2>
-                    <a class="items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 whitespace-nowrap hidden md:block"
-                        data-disabled="false" data-event-label="eventsShelf online-seeAll variant2"
-                        href="https://www.meetup.com/es-ES/find/?source=EVENTS&amp;eventType=online&amp;customStartDate=2026-04-10T10%3A56%3A11-04%3A00&amp;customEndDate=2026-04-11T23%3A59%3A59-04%3A00&amp;location=co--Cali">
-                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center"
-                            style="gap: inherit;">
-                            <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate"
-                                style="gap: inherit;">
-                                <span class="min-w-0 max-w-full truncate px-ds2-2">Ver
-                                    todos los eventos</span>
-                            </span>
-                        </span>
-                    </a>
+                    <app-button-purple [title]="'Ver todos los eventos'"
+                        [classB]="'items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 whitespace-nowrap hidden md:block'">
+                    </app-button-purple>
                 </div>
                 <!-- Items -->
                 <div class="flex flex-col gap-ds2-24 md:hidden">
@@ -131,20 +102,9 @@
     <!-- Button -->
     <div class="ds2-container-lg">
         <div class="px-ds2-20 pb-ds2-32 pt-ds2-28 md:hidden">
-            <a class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-secondary-enabled data-[disabled=false]:bg-ds2-button-base-fill-secondary-enabled shadow-ds2-shadow-button-base-secondary-enabled hover:shadow-ds2-shadow-button-base-secondary-hover active:shadow-ds2-shadow-button-base-secondary-pressed data-[disabled=true]:text-ds2-button-content-fill-secondary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-secondary-disabled transition-shadow duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-secondary-hover before:shadow-ds2-shadow-button-base-secondary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-secondary-pressed after:shadow-ds2-shadow-button-base-secondary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full bg-gradient-to-b from-ds2-surface-fill-secondary-enabled to-ds2-surface-fill-tertiary-enabled"
-                data-disabled="false" data-event-label="eventsShelf online-seeAll variant2"
-                href="https://www.meetup.com/es-ES/find/?source=EVENTS&amp;eventType=online&amp;customStartDate=2026-04-10T10%3A56%3A11-04%3A00&amp;customEndDate=2026-04-11T23%3A59%3A59-04%3A00&amp;location=co--Cali">
-                <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
-                    style="gap: inherit;">
-                    <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
-                        style="gap: inherit;">
-                        <span class="flex min-w-0 max-w-full flex-col items-center justify-center overflow-hidden">
-                            <span class="block min-w-0 max-w-full truncate">Ver todos los
-                                eventos</span>
-                        </span>
-                    </span>
-                </span>
-            </a>
+            <app-button-purple [title]="'Ver todos los eventos'"
+                [classB]="'inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-secondary-enabled data-[disabled=false]:bg-ds2-button-base-fill-secondary-enabled shadow-ds2-shadow-button-base-secondary-enabled hover:shadow-ds2-shadow-button-base-secondary-hover active:shadow-ds2-shadow-button-base-secondary-pressed data-[disabled=true]:text-ds2-button-content-fill-secondary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-secondary-disabled transition-shadow duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-secondary-hover before:shadow-ds2-shadow-button-base-secondary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-secondary-pressed after:shadow-ds2-shadow-button-base-secondary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m16 px-ds2-24 py-ds2-12 w-full bg-gradient-to-b from-ds2-surface-fill-secondary-enabled to-ds2-surface-fill-tertiary-enabled'">
+            </app-button-purple>
         </div>
     </div>
     <!-- Message -->

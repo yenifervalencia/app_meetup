@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CardEventComponent } from '../../../../../shared/card-event/card-event.component';
+import { ButtonPurpleComponent } from '../../../../../shared/button-purple/button-purple.component';
 
 @Component({
   selector: 'app-section2',
-  imports: [CardEventComponent, CommonModule],
+  imports: [CardEventComponent, CommonModule, ButtonPurpleComponent],
   templateUrl: './section2.component.html',
   styleUrl: './section2.component.css',
   standalone: true,

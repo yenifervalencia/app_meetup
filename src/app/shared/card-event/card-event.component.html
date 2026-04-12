@@ -1,11 +1,12 @@
 <div data-recommendationid="" data-recommendationsource="" data-eventref="313707591"
     data-element-name="eventsShelf IRL-Event card variant2" data-testid="eventsShelf IRL-Event card variant2"
     class="relative flex w-full flex-col overflow-hidden transition-all duration-200 hover:-translate-y-ds2-4 active:scale-98">
-    <a href="https://www.meetup.com/es-ES/odooapps/events/313707591/?eventOrigin=home_logged_out_near_location"
+    <a [href]="is_extra?'/main/event/45':'/event/45'"
         class="group inline size-full cursor-pointer hover:no-underline" data-event-label="Event Card">
         <div
             class="relative flex aspect-[127/68] flex-shrink-0 items-center justify-center overflow-hidden rounded-ds2-24 transition-all duration-200 group-hover:scale-98 bg-ds2-surface-fill-tertiary-enabled">
-            <div *ngIf="data.amount" class="absolute left-ds2-12 top-ds2-12 z-10 flex flex-col items-start gap-ds2-4">
+            <div *ngIf="data.amount && !is_extra"
+                class="absolute left-ds2-12 top-ds2-12 z-10 flex flex-col items-start gap-ds2-4">
                 <div
                     class="inline-flex items-center justify-center whitespace-nowrap rounded-ds2-max bg-ds2-badge-base-fill-inverted-enabled text-ds2-badge-text-fill-inverted_primary-enabled px-ds2-8 py-ds2-4 gap-ds2-4 ds2-m12">
                     <span class="truncate px-ds2-2">{{data.amount}}</span>
@@ -19,7 +20,7 @@
                 <div class="opacity-100 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100">
                     <button
                         class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 bg-ds2-icon_button-base-fill-filled_inverted-enabled hover:bg-ds2-icon_button-base-fill-filled_inverted-hover p-ds2-6 after:hidden backdrop-blur-sm"
-                        data-element-name="indexPage-share-click" data-event-label="Share Event"
+                        data-element-name="suggested-events-share-click" data-event-label="Share Event"
                         data-testid="share-btn-redesign" type="button" data-disabled="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
@@ -27,10 +28,22 @@
                             aria-hidden="true">
                             <path d="M12 2v13"></path>
                             <path d="m16 6-4-4-4 4"></path>
-                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8">
+                            </path>
                         </svg>
                     </button>
                 </div>
+                <button
+                    class="relative inline-flex items-center justify-center rounded-full transition-all select-none after:absolute after:-inset-ds2-6 after:rounded-full after:transition-all disabled:after:bg-transparent disabled:active:scale-100 active:scale-92 bg-ds2-icon_button-base-fill-filled_inverted-enabled hover:bg-ds2-icon_button-base-fill-filled_inverted-hover p-ds2-6 after:hidden backdrop-blur-sm"
+                    type="button" data-disabled="false" *ngIf="is_extra">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-bookmark text-ds2-icon_button-icon-fill-filled_inverted-enabled hover:text-ds2-icon_button-icon-fill-filled_inverted-hover fill-none"
+                        aria-hidden="true">
+                        <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z">
+                        </path>
+                    </svg>
+                </button>
             </div>
         </div>
         <div class="flex flex-col pt-ds2-16">
@@ -59,14 +72,76 @@
                             <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5">
                             </path>
                             <rect x="2" y="6" width="14" height="12" rx="2"></rect>
-                        </svg><span class="truncate px-ds2-2">En línea</span>
+                        </svg>
+                        <span class="truncate px-ds2-2">En línea</span>
                     </div>
                 </div>
             </div>
             <div class="ds2-r14 mt-ds2-2 flex items-center text-ds2-text-fill-tertiary-enabled">
                 <div class="flex-shrink min-w-0 truncate">por {{data.company}}</div>
+                <div class="flex-shrink-0" *ngIf="is_extra">
+                    <div class="flex flex-row text-sm text-ds-neutral500 items-center">
+                        <div class="mx-1 mt-0.5 ds2-r14 mb-0" data-icon-c="icon-1" style="width: 3px; height: 3px;">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"
+                                    fill="none" class="injected-svg fill-current"
+                                    data-src="https://secure.meetupstatic.com/next/images/design-system-icons/dot.svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    style="width:3px;height:3px;width:3px;height:3px" data-icon="icon-1">
+                                    <title>icon</title>
+                                    <circle cx="2" cy="1.99951" r="2" fill="currentColor"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="mt-0.5 leading-none text-ds-neutral500 ds2-r14 mb-0">4.8</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.505988047761336" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-star ml-ds2-4 self-center fill-ds2-icon-fill-brand-enabled text-ds2-icon-fill-brand-enabled"
+                            aria-hidden="true">
+                            <path
+                                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div class="ds2-r14 mt-ds2-2 flex max-w-[95%] flex-row text-ds2-text-fill-tertiary-enabled" *ngIf="data.address">
+            <div class="flex items-center text-ds2-text-fill-primary-enabled" *ngIf="is_extra">
+                <div class="m-ds2-8 ml-0 flex">
+                    <ul class="flex flex-row">
+                        <li class="relative first:ml-ds2-0 -ml-ds2-6"
+                            style="mask: radial-gradient(circle at 110% 50%, transparent 10px, black 8px);">
+                            <div class="relative flex items-center justify-center rounded-ds2-max size-[18px]">
+                                <div
+                                    class="flex size-full select-none items-center justify-center overflow-hidden rounded-ds2-max outline-1 -outline-offset-1 outline-ds2-avatar-base-stroke-enabled [outline-style:solid]">
+                                    <img alt="Foto del usuario " draggable="false" aria-label="Foto del usuario "
+                                        loading="lazy" width="18" height="18" decoding="async" data-nimg="1"
+                                        class="size-full object-cover"
+                                        srcset="https://secure.meetupstatic.com/photos/member/8/4/6/thumb_320942118.jpeg?w=32 1x, https://secure.meetupstatic.com/photos/member/8/4/6/thumb_320942118.jpeg?w=48 2x"
+                                        src="https://secure.meetupstatic.com/photos/member/8/4/6/thumb_320942118.jpeg?w=48"
+                                        style="color: transparent;">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative first:ml-ds2-0 -ml-ds2-6">
+                            <div class="relative flex items-center justify-center rounded-ds2-max size-[18px]">
+                                <div
+                                    class="flex size-full select-none items-center justify-center overflow-hidden rounded-ds2-max outline-1 -outline-offset-1 outline-ds2-avatar-base-stroke-enabled [outline-style:solid]">
+                                    <img alt="Foto del usuario " draggable="false" aria-label="Foto del usuario "
+                                        loading="lazy" width="18" height="18" decoding="async" data-nimg="1"
+                                        class="size-full object-cover"
+                                        srcset="https://secure.meetupstatic.com/photos/member/4/d/7/e/thumb_324979838.jpeg?w=32 1x, https://secure.meetupstatic.com/photos/member/4/d/7/e/thumb_324979838.jpeg?w=48 2x"
+                                        src="https://secure.meetupstatic.com/photos/member/4/d/7/e/thumb_324979838.jpeg?w=48"
+                                        style="color: transparent;">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <span class="ds2-m14 py-ds2-8">2 asistentes</span>
+            </div>
+            <div class="ds2-r14 mt-ds2-2 flex max-w-[95%] flex-row text-ds2-text-fill-tertiary-enabled"
+                *ngIf="data.address">
                 <span class="truncate">{{data.address}} </span>
             </div>
         </div>

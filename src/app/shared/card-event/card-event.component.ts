@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardEventComponent {
   @Input() data: any = {};
+  @Input() is_extra: boolean = false;
 }

@@ -1,0 +1,46 @@
+<section class="lg:py-0 py-ds2-24" id="suggested-events" aria-labelledby="suggested-events-title" role="region">
+    <div class="px-ds2-20 lg:px-0 flex flex-wrap items-baseline justify-between gap-ds2-12 gap-y-ds2-20">
+        <div class="flex flex-row items-baseline gap-ds2-10">
+            <h2 id="suggested-events-title" class="ds2-b20 text-ds2-text-fill-primary-enabled md:ds2-b24">Para ti</h2>
+        </div>
+        <app-button-purple [title]="'Explorar todo'"
+            [classB]="'inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6'">
+        </app-button-purple>
+
+    </div>
+    <div class="pt-ds2-28">
+        <div class="relative">
+            <div class="px-ds2-20 lg:px-0 flex -translate-y-ds2-4 gap-ds2-24 overflow-x-auto scroll-smooth pt-ds2-4 no-scrollbar mask-fade-right"
+                style="scroll-snap-type: x mandatory; scroll-padding: 0px 40px;">
+
+                <div class="max-w-[288px] flex-shrink-0 lg:max-w-[300px]"
+                    style="scroll-snap-align: start; scroll-snap-stop: always;" *ngFor="let data of events">
+                    <app-card-event [data]="data" [is_extra]="true"></app-card-event>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="absolute right-0 top-1/2 z-10 -translate-y-1/2 translate-x-1/2">
+                    <button
+                        class="inline-flex items-center justify-center rounded-ds2-max max-w-full min-w-0 select-none data-[disabled=false]:active:scale-98 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline relative text-ds2-button-content-fill-primary-enabled data-[disabled=false]:bg-ds2-button-base-fill-primary-enabled shadow-ds2-shadow-button-base-primary-enabled hover:shadow-ds2-shadow-button-base-primary-hover active:shadow-ds2-shadow-button-base-primary-pressed data-[disabled=true]:text-ds2-button-content-fill-primary-disabled data-[disabled=true]:bg-ds2-button-base-fill-primary-disabled data-[disabled=true]:shadow-ds2-shadow-button-base-primary-disabled transition-all duration-150 before:absolute before:inset-0 before:z-0 before:bg-ds2-button-base-fill-primary-hover before:shadow-ds2-shadow-button-base-primary-hover before:rounded-ds2-max before:opacity-0 before:transition-opacity before:duration-150 data-[disabled=false]:hover:before:opacity-100 after:absolute after:inset-0 after:z-0 after:bg-ds2-button-base-fill-primary-pressed after:shadow-ds2-shadow-button-base-primary-pressed after:rounded-ds2-max after:opacity-0 after:transition-opacity after:duration-150 data-[disabled=false]:active:after:opacity-100 gap-ds2-8 ds2-m14 p-ds2-12"
+                        aria-label="Desplazar a la derecha" type="button" data-disabled="false">
+                        <span class="relative z-10 flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                            style="gap: inherit;">
+                            <span class="flex min-w-0 max-w-full items-center justify-center overflow-hidden"
+                                style="gap: inherit;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.146625258399798"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide shrink-0"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M13.083 3.888c1.671 3.818 3.675 5.408 8.112 8.112-4.452 2.475-6.321 4.191-8.112 8.112">
+                                    </path>
+                                    <path d="M2.806 12h18"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
